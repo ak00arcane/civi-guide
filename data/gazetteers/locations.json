@@ -1,0 +1,36 @@
+{
+  "states": [
+    "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
+    "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka",
+    "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram",
+    "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu",
+    "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal",
+    "Delhi", "Puducherry", "Jammu and Kashmir", "Ladakh"
+  ],
+  "district_to_state": {
+    "chennai": "Tamil Nadu",
+    "coimbatore": "Tamil Nadu",
+    "madurai": "Tamil Nadu",
+    "tiruchirappalli": "Tamil Nadu",
+    "salem": "Tamil Nadu",
+    "tirunelveli": "Tamil Nadu",
+    "erode": "Tamil Nadu",
+    "vellore": "Tamil Nadu",
+    "thanjavur": "Tamil Nadu",
+    "kanchipuram": "Tamil Nadu",
+    "bengaluru": "Karnataka",
+    "bangalore": "Karnataka",
+    "mysuru": "Karnataka",
+    "hyderabad": "Telangana",
+    "mumbai": "Maharashtra",
+    "pune": "Maharashtra",
+    "delhi": "Delhi",
+    "new delhi": "Delhi",
+    "kolkata": "West Bengal",
+    "jaipur": "Rajasthan",
+    "lucknow": "Uttar Pradesh",
+    "ahmedabad": "Gujarat",
+    "kochi": "Kerala",
+    "thiruvananthapuram": "Kerala"
+  }
+}
