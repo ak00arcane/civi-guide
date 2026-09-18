@@ -21,10 +21,6 @@ INCOME_RE = re.compile(
     r"(?:₹|rs\.?\s*)?\s*(\d+(?:\.\d+)?)\s*(lakh|lakhs|lacs|lac|crore)?",
     re.I,
 )
-AGE_RE = re.compile(r"\b(\d{1,2})\s*(?:year[- ]old|years? old|yrs? old)\b", re.I)
-AGE_RE2 = re.compile(r"\bi(?:['’]?m| am)\s+(\d{1,2})\b", re.I)
-
-
 def rupees_from_match(num: str, unit: str | None) -> int:
     n = float(num)
     u = (unit or "").lower()
@@ -40,20 +36,35 @@ def rupees_from_match(num: str, unit: str | None) -> int:
 
 def extract_income(text: str) -> int | None:
     # Prefer patterns with lakh
-    for m in re.finditer(r"(?:₹|rs\.?\s*)?\s*(\d+(?:\.\d+)?)\s*(lakh|lakhs|lacs|lac)\b", text, re.I):
+    for m in re.finditer(r"(?:(?:income|salary|earning|earnings)(?:\s+of)?\s*)?(?:₹|rs\.?\s*)?\s*(\d+(?:\.\d+)?)\s*(lakh|lakhs|lacs|lac)\b", text, re.I):
         return rupees_from_match(m.group(1), m.group(2))
-    m = re.search(r"(?:₹|rs\.?\s*)\s*(\d[\d,]*)", text, re.I)
+    m = re.search(r"(?:(?:income|salary|earning|earnings)(?:\s+of)?\s*)?(?:₹|rs\.?\s*)\s*(\d[\d,]*)", text, re.I)
     if m:
         return int(m.group(1).replace(",", ""))
+    m = re.search(r"\b(?:income|salary|earning|earnings)(?:\s+of)?\s*[:=-]?\s*(\d[\d,]*)\b", text, re.I)
+    if m:
+        val = int(m.group(1).replace(",", ""))
+        if val > 1000:
+            return val
     return None
 
 
+AGE_PATTERNS = [
+    re.compile(r"\b(\d{1,2})\s*[-]?\s*(?:years?[- ]old|yrs?[- ]old|year[- ]old)\b", re.I),
+    re.compile(r"\b(?:aged?|age)\s*[-:]?\s*(\d{1,2})\b", re.I),
+    re.compile(r"\bi(?:['’]?m| am)\s+(\d{1,2})\b", re.I),
+    re.compile(r"\b(\d{1,2})\s*(?:years?|yrs?)\s+old\b", re.I),
+    re.compile(r"\b(\d{1,2})\s*(?:years?|yrs?)\b", re.I),
+]
+
+
 def extract_age(text: str) -> int | None:
-    m = AGE_RE.search(text) or AGE_RE2.search(text)
-    if m:
-        n = int(m.group(1))
-        if 1 <= n <= 120:
-            return n
+    for pat in AGE_PATTERNS:
+        m = pat.search(text)
+        if m:
+            n = int(m.group(1))
+            if 1 <= n <= 120:
+                return n
     return None
 
 

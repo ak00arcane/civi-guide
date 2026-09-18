@@ -1,0 +1,253 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  --bg-main: #F6F8FB;
+  --bg-card: #FFFFFF;
+  --bg-subtle: #F1F5F9;
+  --bg-subtle-hover: #E2E8F0;
+  --border-color: #E2E8F0;
+  --border-strong: #CBD5E1;
+
+  --primary: #4338CA;
+  --primary-hover: #3730A3;
+  --primary-soft-bg: #EEF2FF;
+  --primary-soft-border: #C7D2FE;
+  --primary-soft-text: #4338CA;
+
+  --accent-teal: #0D9488;
+  --accent-teal-hover: #0F766E;
+  --accent-teal-soft-bg: #F0FDFA;
+
+  --text-main: #0F172A;
+  --text-muted: #475569;
+  --text-dim: #94A3B8;
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 16px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.12);
+
+  /* Eligibility status badges */
+  --status-eligible-bg: #ECFDF5;
+  --status-eligible-border: #A7F3D0;
+  --status-eligible-text: #047857;
+
+  --status-likely-bg: #FFFBEB;
+  --status-likely-border: #FDE68A;
+  --status-likely-text: #B45309;
+
+  --status-needs-bg: #EFF6FF;
+  --status-needs-border: #BFDBFE;
+  --status-needs-text: #1D4ED8;
+
+  --status-not-bg: #FEF2F2;
+  --status-not-border: #FECACA;
+  --status-not-text: #B91C1C;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: var(--primary-soft-border);
+  color: var(--primary);
+}
+
+/* Card surface — replaces the old glassmorphism panel */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.card-hover {
+  transition: box-shadow 150ms ease, border-color 150ms ease, transform 150ms ease;
+}
+
+.card-hover:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-strong);
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.badge-eligible {
+  background: var(--status-eligible-bg);
+  border: 1px solid var(--status-eligible-border);
+  color: var(--status-eligible-text);
+}
+
+.badge-likely {
+  background: var(--status-likely-bg);
+  border: 1px solid var(--status-likely-border);
+  color: var(--status-likely-text);
+}
+
+.badge-needs {
+  background: var(--status-needs-bg);
+  border: 1px solid var(--status-needs-border);
+  color: var(--status-needs-text);
+}
+
+.badge-not {
+  background: var(--status-not-bg);
+  border: 1px solid var(--status-not-border);
+  color: var(--status-not-text);
+}
+
+/* Chip — neutral pill for metadata (category, location) */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  background: var(--bg-subtle);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease, opacity 150ms ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  border: 1px solid var(--primary);
+}
+.btn-primary:hover:not(:disabled) {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.btn-accent {
+  background: var(--accent-teal);
+  color: #fff;
+  border: 1px solid var(--accent-teal);
+}
+.btn-accent:hover:not(:disabled) {
+  background: var(--accent-teal-hover);
+  border-color: var(--accent-teal-hover);
+}
+
+.btn-secondary {
+  background: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--border-strong);
+}
+.btn-secondary:hover:not(:disabled) {
+  background: var(--bg-subtle);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+}
+.btn-ghost:hover:not(:disabled) {
+  background: var(--bg-subtle);
+  color: var(--text-main);
+}
+
+/* Form controls */
+.field-input {
+  width: 100%;
+  background: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+.field-input::placeholder {
+  color: var(--text-dim);
+}
+.field-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-soft-bg);
+}
+
+.field-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}
+
+/* Focus ring for accessibility on interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-dim);
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -124,6 +124,12 @@ class Scheme(Base):
     )
     quality_flags: Mapped[list | None] = mapped_column(JSON, nullable=True)
 
+    # Trust pipeline (see docs/TRUST_PIPELINE.md). Populated by the trust engine (Phase 4),
+    # never by the catalog importer — NULL/"unscored" means the pipeline has not run yet.
+    confidence: Mapped[float | None] = mapped_column(Float, nullable=True)
+    trust_mode: Mapped[str] = mapped_column(String(32), default="unscored")
+    last_scored_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
+
     rules: Mapped[list["SchemeRule"]] = relationship(back_populates="scheme", cascade="all, delete-orphan")
     benefits: Mapped[list["SchemeBenefit"]] = relationship(back_populates="scheme", cascade="all, delete-orphan")
     documents: Mapped[list["SchemeDocument"]] = relationship(back_populates="scheme", cascade="all, delete-orphan")
@@ -166,7 +172,33 @@ class SchemeSource(Base):
     official_source: Mapped[str | None] = mapped_column(String(256), nullable=True)
     official_application_url: Mapped[str | None] = mapped_column(String(512), nullable=True)
     last_verified_date: Mapped[date | None] = mapped_column(Date, nullable=True)
+    # Provenance (see docs/TRUST_PIPELINE.md), filled in by the fetch layer (Phase 2).
+    source_type: Mapped[str | None] = mapped_column(String(32), nullable=True)
+    fetched_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
+    content_hash: Mapped[str | None] = mapped_column(String(64), nullable=True)
+    raw_snapshot_path: Mapped[str | None] = mapped_column(String(512), nullable=True)
     scheme: Mapped[Scheme] = relationship(back_populates="sources")
+
+
+class RawSnapshot(Base):
+    """A single fetch of a source URL, independent of whether it has been matched to a
+    Scheme or extracted yet. This is the snapshot store the fetch layer (Phase 2) writes
+    into; the extractor (Phase 3) reads from it. See docs/TRUST_PIPELINE.md."""
+
+    __tablename__ = "raw_snapshots"
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=uid)
+    scheme_pk: Mapped[str | None] = mapped_column(String(36), ForeignKey("schemes.id"), nullable=True)
+    source_url: Mapped[str] = mapped_column(String(512), index=True)
+    source_type: Mapped[str | None] = mapped_column(String(32), nullable=True)
+    http_status: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    content_hash: Mapped[str] = mapped_column(String(64), index=True)
+    # Hash of normalized (tag-stripped, whitespace-collapsed) text, not raw bytes. Change
+    # detection (Phase 6) diffs on this instead of content_hash, since raw HTML on most
+    # gov sites carries volatile bits (CSRF tokens, timestamps, rotating banners) that
+    # would otherwise make nearly every fetch look "changed" even when it isn't.
+    normalized_hash: Mapped[str] = mapped_column(String(64), index=True)
+    raw_snapshot_path: Mapped[str] = mapped_column(String(512))
+    fetched_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 
 
 class SchemeEmbedding(Base):
@@ -200,6 +232,22 @@ class RecommendationReason(Base):
     result: Mapped[str] = mapped_column(String(16))
     message: Mapped[str] = mapped_column(Text)
     extra: Mapped[dict | None] = mapped_column(JSON, nullable=True)
+
+
+class SchemeReport(Base):
+    """A citizen-submitted "this looks wrong" report on a scheme (Phase 7, see
+    docs/TRUST_PIPELINE.md). Feeds a human review queue, not the automated
+    trust score directly — a single anonymous report is too easy to spam or
+    get wrong to auto-demote a scheme on its own."""
+
+    __tablename__ = "scheme_reports"
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=uid)
+    scheme_pk: Mapped[str] = mapped_column(String(36), ForeignKey("schemes.id"))
+    scheme_id: Mapped[str] = mapped_column(String(64))
+    profile_id: Mapped[str | None] = mapped_column(String(36), ForeignKey("citizen_profiles.id"), nullable=True)
+    reason: Mapped[str] = mapped_column(Text)
+    status: Mapped[str] = mapped_column(String(32), default="open")
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 
 
 class SavedScheme(Base):

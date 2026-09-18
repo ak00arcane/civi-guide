@@ -1,3 +1,4 @@
+import secrets
 from datetime import datetime, timedelta, timezone
 from uuid import UUID
 
@@ -36,7 +37,7 @@ def set_session_cookie(response: Response, profile_id: UUID) -> None:
 
 
 def require_admin(x_admin_token: str | None = Header(default=None, alias="X-Admin-Token")) -> None:
-    if not x_admin_token or x_admin_token != settings.admin_token:
+    if not x_admin_token or not secrets.compare_digest(x_admin_token, settings.admin_token):
         raise HTTPException(status_code=401, detail="Admin authorization required.")
 
 

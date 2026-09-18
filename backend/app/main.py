@@ -2,11 +2,13 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
-from app.routers import admin, eligibility, parse, profile, recommend, research, saved, schemes
+from app.rate_limit import RateLimitMiddleware
+from app.routers import admin, eligibility, parse, profile, recommend, reports, research, saved, schemes
 from db.session import Base, engine, SessionLocal
-from services.import_schemes import import_demo
+from services.import_schemes import import_demo, import_verified
 
 app = FastAPI(title="CivicGuide API", version="0.1.0")
+app.add_middleware(RateLimitMiddleware)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origin_list,
@@ -23,6 +25,8 @@ app.include_router(recommend.router)
 app.include_router(saved.router)
 app.include_router(admin.router)
 app.include_router(research.router)
+app.include_router(reports.router)
+app.include_router(reports.admin_router)
 
 
 @app.get("/api/health")
@@ -37,7 +41,8 @@ def startup():
     try:
         from db.models import Scheme
 
-        if db.query(Scheme).count() == 0:
+        import_verified(db)
+        if db.query(Scheme).filter(Scheme.is_demo == True).count() == 0:
             import_demo(db)
     finally:
         db.close()

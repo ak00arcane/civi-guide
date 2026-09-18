@@ -16,6 +16,10 @@ class Settings(BaseSettings):
     weight_usefulness: float = 0.05
     embedding_model: str = "all-MiniLM-L6-v2"
     use_transformers: bool = False
+    raw_snapshot_dir: str = "data/raw_snapshots"
+    rate_limit_per_minute: int = 120
+    anthropic_api_key: str | None = None
+    gemini_api_key: str | None = None
 
     @property
     def cors_origin_list(self) -> list[str]:

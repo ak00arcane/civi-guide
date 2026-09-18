@@ -1,0 +1,3691 @@
+[
+  {
+    "scheme_id": "DEMO-TN-EDU-001",
+    "scheme_name": "DEMO TN Graduate Scholarship",
+    "category": "Education",
+    "sub_category": "Scholarship",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Financial assistance for higher education for graduates in Tamil Nadu.",
+    "benefits_summary": "\u20b950,000/year",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 35,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 300000,
+        "required": true
+      },
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "education",
+        "op": "in",
+        "value": [
+          "Graduate",
+          "Engineering"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b950,000/year"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-tn-edu-001",
+        "official_application_url": "https://example.gov.in/demo/demo-tn-edu-001/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-TN-EDU-002",
+    "scheme_name": "DEMO TN Engineering Tuition Support",
+    "category": "Education",
+    "sub_category": "Tuition",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Support for engineering students paying college fees.",
+    "benefits_summary": "\u20b940,000/year",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 35,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 300000,
+        "required": true
+      },
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "education",
+        "op": "in",
+        "value": [
+          "Engineering",
+          "Student"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b940,000/year"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-tn-edu-002",
+        "official_application_url": "https://example.gov.in/demo/demo-tn-edu-002/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-EDU-003",
+    "scheme_name": "DEMO National Merit Grant",
+    "category": "Education",
+    "sub_category": "Merit",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "National demo grant for students in higher education.",
+    "benefits_summary": "\u20b930,000/year",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 16,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 30,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 800000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b930,000/year"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-edu-003",
+        "official_application_url": "https://example.gov.in/demo/demo-in-edu-003/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-KA-EDU-004",
+    "scheme_name": "DEMO Karnataka Student Aid",
+    "category": "Education",
+    "sub_category": "Aid",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Karnataka",
+    "district": null,
+    "description": "Student aid for Karnataka residents.",
+    "benefits_summary": "\u20b925,000/year",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Karnataka"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 25,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b925,000/year"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-ka-edu-004",
+        "official_application_url": "https://example.gov.in/demo/demo-ka-edu-004/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-EDU-005",
+    "scheme_name": "DEMO Hostel Stipend",
+    "category": "Education",
+    "sub_category": "Hostel",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Stipend for students living in hostels.",
+    "benefits_summary": "\u20b92,000/month",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "education",
+        "op": "in",
+        "value": [
+          "Student",
+          "Engineering"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 28,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b92,000/month"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-edu-005",
+        "official_application_url": "https://example.gov.in/demo/demo-in-edu-005/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-TN-EMP-001",
+    "scheme_name": "DEMO TN Job Seeker Support",
+    "category": "Employment",
+    "sub_category": "Jobseeker",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Employment assistance for unemployed graduates in Tamil Nadu.",
+    "benefits_summary": "Job matching stipend \u20b98,000/month",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 35,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 300000,
+        "required": true
+      },
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "employment",
+        "op": "in",
+        "value": [
+          "unemployed",
+          "job_seeker"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "education",
+        "op": "in",
+        "value": [
+          "Graduate",
+          "Engineering"
+        ],
+        "required": false
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Job matching stipend \u20b98,000/month"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-tn-emp-001",
+        "official_application_url": "https://example.gov.in/demo/demo-tn-emp-001/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-TN-SKL-001",
+    "scheme_name": "DEMO TN Skill Bridge",
+    "category": "Employment",
+    "sub_category": "Skill",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Skill development training for unemployed youth.",
+    "benefits_summary": "Free training + \u20b95,000 stipend",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 35,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 300000,
+        "required": true
+      },
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "employment",
+        "op": "in",
+        "value": [
+          "unemployed",
+          "job_seeker"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Free training + \u20b95,000 stipend"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-tn-skl-001",
+        "official_application_url": "https://example.gov.in/demo/demo-tn-skl-001/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-EMP-002",
+    "scheme_name": "DEMO National Apprentice Assist",
+    "category": "Employment",
+    "sub_category": "Apprentice",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Apprenticeship support for first-time job seekers.",
+    "benefits_summary": "\u20b99,000/month",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 30,
+        "required": true
+      },
+      {
+        "rule_type": "employment",
+        "op": "in",
+        "value": [
+          "unemployed",
+          "job_seeker",
+          "student"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b99,000/month"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-emp-002",
+        "official_application_url": "https://example.gov.in/demo/demo-in-emp-002/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-EMP-003",
+    "scheme_name": "DEMO Resume Clinic Grant",
+    "category": "Employment",
+    "sub_category": "Placement",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Placement preparation for graduates.",
+    "benefits_summary": "Workshop access",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "education",
+        "op": "in",
+        "value": [
+          "Graduate",
+          "Engineering"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 40,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Workshop access"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-emp-003",
+        "official_application_url": "https://example.gov.in/demo/demo-in-emp-003/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-MH-EMP-004",
+    "scheme_name": "DEMO Maharashtra Wage Support",
+    "category": "Employment",
+    "sub_category": "Wage",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Maharashtra",
+    "district": null,
+    "description": "Wage support for unemployed residents of Maharashtra.",
+    "benefits_summary": "\u20b96,000/month",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Maharashtra"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "employment",
+        "op": "in",
+        "value": [
+          "unemployed"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 250000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b96,000/month"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-mh-emp-004",
+        "official_application_url": "https://example.gov.in/demo/demo-mh-emp-004/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-HLT-001",
+    "scheme_name": "DEMO National Health Cover Lite",
+    "category": "Healthcare",
+    "sub_category": "Insurance",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Demo health coverage for low-income families.",
+    "benefits_summary": "Hospitalization cover \u20b92 lakh",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 300000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Hospitalization cover \u20b92 lakh"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-hlt-001",
+        "official_application_url": "https://example.gov.in/demo/demo-in-hlt-001/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-TN-HLT-002",
+    "scheme_name": "DEMO TN Clinic Access",
+    "category": "Healthcare",
+    "sub_category": "Primary",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Primary care access for Tamil Nadu residents.",
+    "benefits_summary": "Free clinic visits",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Free clinic visits"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-tn-hlt-002",
+        "official_application_url": "https://example.gov.in/demo/demo-tn-hlt-002/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-HLT-003",
+    "scheme_name": "DEMO Maternity Health Assist",
+    "category": "Healthcare",
+    "sub_category": "Maternity",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Maternity health support.",
+    "benefits_summary": "\u20b912,000",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "gender",
+        "op": "in",
+        "value": [
+          "female"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 45,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b912,000"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-hlt-003",
+        "official_application_url": "https://example.gov.in/demo/demo-in-hlt-003/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-HLT-004",
+    "scheme_name": "DEMO Disability Rehab Care",
+    "category": "Healthcare",
+    "sub_category": "Rehab",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Rehabilitation support for persons with disability.",
+    "benefits_summary": "Aid devices",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "disability",
+        "op": "in",
+        "value": [
+          "yes",
+          "true",
+          "disabled"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Aid devices"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-hlt-004",
+        "official_application_url": "https://example.gov.in/demo/demo-in-hlt-004/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-HLT-005",
+    "scheme_name": "DEMO Senior Health Check",
+    "category": "Healthcare",
+    "sub_category": "Geriatric",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Annual health checks for seniors.",
+    "benefits_summary": "Free checkup",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 60,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Free checkup"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-hlt-005",
+        "official_application_url": "https://example.gov.in/demo/demo-in-hlt-005/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-HOU-001",
+    "scheme_name": "DEMO Affordable Home Interest Relief",
+    "category": "Housing",
+    "sub_category": "Home",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Interest relief for first home buyers with low income.",
+    "benefits_summary": "Interest subsidy",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 600000,
+        "required": true
+      },
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 21,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Interest subsidy"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-hou-001",
+        "official_application_url": "https://example.gov.in/demo/demo-in-hou-001/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-TN-HOU-002",
+    "scheme_name": "DEMO TN Rental Assist",
+    "category": "Housing",
+    "sub_category": "Rent",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Rental assistance for urban youth.",
+    "benefits_summary": "\u20b92,000/month",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 35,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 300000,
+        "required": true
+      },
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b92,000/month"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-tn-hou-002",
+        "official_application_url": "https://example.gov.in/demo/demo-tn-hou-002/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-HOU-003",
+    "scheme_name": "DEMO Rural Housing Demo",
+    "category": "Housing",
+    "sub_category": "Rural",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Rural housing construction support (demo).",
+    "benefits_summary": "Construction grant",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 250000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Construction grant"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-hou-003",
+        "official_application_url": "https://example.gov.in/demo/demo-in-hou-003/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-KA-HOU-004",
+    "scheme_name": "DEMO Karnataka Shelter Aid",
+    "category": "Housing",
+    "sub_category": "Shelter",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Karnataka",
+    "district": null,
+    "description": "Shelter aid for Karnataka low-income families.",
+    "benefits_summary": "One-time grant",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Karnataka"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 200000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "One-time grant"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-ka-hou-004",
+        "official_application_url": "https://example.gov.in/demo/demo-ka-hou-004/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-HOU-005",
+    "scheme_name": "DEMO Women Home Ownership",
+    "category": "Housing",
+    "sub_category": "Women",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Home ownership support listed for women applicants.",
+    "benefits_summary": "Down-payment assist",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "gender",
+        "op": "in",
+        "value": [
+          "female"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 500000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Down-payment assist"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-hou-005",
+        "official_application_url": "https://example.gov.in/demo/demo-in-hou-005/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-WCD-001",
+    "scheme_name": "DEMO Child Nutrition Support",
+    "category": "Women & Child",
+    "sub_category": "Nutrition",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Nutrition support for young children.",
+    "benefits_summary": "Ration kit",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "other",
+        "op": "eq",
+        "value": {
+          "name": "has_child",
+          "allowed": [
+            "yes"
+          ]
+        },
+        "required": false
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Ration kit"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-wcd-001",
+        "official_application_url": "https://example.gov.in/demo/demo-in-wcd-001/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-WCD-002",
+    "scheme_name": "DEMO Women Livelihood Starter",
+    "category": "Women & Child",
+    "sub_category": "Livelihood",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Livelihood support for women entrepreneurs.",
+    "benefits_summary": "\u20b925,000 seed",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "gender",
+        "op": "in",
+        "value": [
+          "female"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 50,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b925,000 seed"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-wcd-002",
+        "official_application_url": "https://example.gov.in/demo/demo-in-wcd-002/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-TN-WCD-003",
+    "scheme_name": "DEMO TN Mother Assist",
+    "category": "Women & Child",
+    "sub_category": "Maternity",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Maternal support for Tamil Nadu residents.",
+    "benefits_summary": "\u20b98,000",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "gender",
+        "op": "in",
+        "value": [
+          "female"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b98,000"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-tn-wcd-003",
+        "official_application_url": "https://example.gov.in/demo/demo-tn-wcd-003/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-WCD-004",
+    "scheme_name": "DEMO Creche Access Demo",
+    "category": "Women & Child",
+    "sub_category": "Childcare",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Childcare access for working parents.",
+    "benefits_summary": "Subsidised creche",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Subsidised creche"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-wcd-004",
+        "official_application_url": "https://example.gov.in/demo/demo-in-wcd-004/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-WCD-005",
+    "scheme_name": "DEMO Girl Student Cycle",
+    "category": "Women & Child",
+    "sub_category": "Education",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Support listed for girl students in secondary school.",
+    "benefits_summary": "Transport support",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "gender",
+        "op": "in",
+        "value": [
+          "female"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 18,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Transport support"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-wcd-005",
+        "official_application_url": "https://example.gov.in/demo/demo-in-wcd-005/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-AGR-001",
+    "scheme_name": "DEMO Crop Support Lite",
+    "category": "Agriculture",
+    "sub_category": "Crop",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Input support for small farmers.",
+    "benefits_summary": "Seed kit",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "farmer",
+        "op": "in",
+        "value": [
+          "farmer",
+          "yes"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Seed kit"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-agr-001",
+        "official_application_url": "https://example.gov.in/demo/demo-in-agr-001/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-TN-AGR-002",
+    "scheme_name": "DEMO TN Irrigation Assist",
+    "category": "Agriculture",
+    "sub_category": "Water",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Irrigation demo support for Tamil Nadu farmers.",
+    "benefits_summary": "Pump subsidy",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "farmer",
+        "op": "in",
+        "value": [
+          "farmer",
+          "yes"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Pump subsidy"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-tn-agr-002",
+        "official_application_url": "https://example.gov.in/demo/demo-tn-agr-002/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-AGR-003",
+    "scheme_name": "DEMO Farm Income Shield",
+    "category": "Agriculture",
+    "sub_category": "Insurance",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Demo crop income shield.",
+    "benefits_summary": "Payout on loss",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "farmer",
+        "op": "in",
+        "value": [
+          "farmer",
+          "yes"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 400000,
+        "required": false
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Payout on loss"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-agr-003",
+        "official_application_url": "https://example.gov.in/demo/demo-in-agr-003/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-PB-AGR-004",
+    "scheme_name": "DEMO Punjab Farmer Credit",
+    "category": "Agriculture",
+    "sub_category": "Credit",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Punjab",
+    "district": null,
+    "description": "Credit support for Punjab farmers.",
+    "benefits_summary": "Interest subvention",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Punjab"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "farmer",
+        "op": "in",
+        "value": [
+          "farmer",
+          "yes"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Interest subvention"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-pb-agr-004",
+        "official_application_url": "https://example.gov.in/demo/demo-pb-agr-004/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-AGR-005",
+    "scheme_name": "DEMO Agri Skill Youth",
+    "category": "Agriculture",
+    "sub_category": "Skill",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Agri skill program for rural youth.",
+    "benefits_summary": "Training",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 35,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Training"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-agr-005",
+        "official_application_url": "https://example.gov.in/demo/demo-in-agr-005/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-TN-FIN-001",
+    "scheme_name": "DEMO TN Livelihood Grant",
+    "category": "Financial Assistance",
+    "sub_category": "Grant",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Financial assistance for low-income youth starting work or business.",
+    "benefits_summary": "\u20b940,000 grant",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 35,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 300000,
+        "required": true
+      },
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b940,000 grant"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-tn-fin-001",
+        "official_application_url": "https://example.gov.in/demo/demo-tn-fin-001/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-FIN-002",
+    "scheme_name": "DEMO Emergency Family Support",
+    "category": "Financial Assistance",
+    "sub_category": "Relief",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Short-term financial assistance for low-income families.",
+    "benefits_summary": "\u20b910,000",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 250000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b910,000"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-fin-002",
+        "official_application_url": "https://example.gov.in/demo/demo-in-fin-002/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-FIN-003",
+    "scheme_name": "DEMO Education Loan Interest Demo",
+    "category": "Financial Assistance",
+    "sub_category": "Education",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Interest support for higher education loans.",
+    "benefits_summary": "Interest subsidy",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "education",
+        "op": "in",
+        "value": [
+          "Student",
+          "Engineering",
+          "Graduate"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 800000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Interest subsidy"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-fin-003",
+        "official_application_url": "https://example.gov.in/demo/demo-in-fin-003/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-FIN-004",
+    "scheme_name": "DEMO High Income Bond (control)",
+    "category": "Financial Assistance",
+    "sub_category": "Bond",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Control record requiring high income so most users are not eligible.",
+    "benefits_summary": "N/A",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 50000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "N/A"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-fin-004",
+        "official_application_url": "https://example.gov.in/demo/demo-in-fin-004/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-UP-FIN-005",
+    "scheme_name": "DEMO UP Family Assist",
+    "category": "Financial Assistance",
+    "sub_category": "Family",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Uttar Pradesh",
+    "district": null,
+    "description": "Family assistance for Uttar Pradesh residents.",
+    "benefits_summary": "\u20b915,000",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Uttar Pradesh"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 200000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b915,000"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-up-fin-005",
+        "official_application_url": "https://example.gov.in/demo/demo-up-fin-005/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-DIS-001",
+    "scheme_name": "DEMO Assistive Device Grant",
+    "category": "Disability",
+    "sub_category": "Device",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Assistive device support for persons with disability.",
+    "benefits_summary": "Device grant",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "disability",
+        "op": "in",
+        "value": [
+          "yes",
+          "true",
+          "disabled"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Device grant"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-dis-001",
+        "official_application_url": "https://example.gov.in/demo/demo-in-dis-001/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-TN-DIS-002",
+    "scheme_name": "DEMO TN Inclusive Livelihood",
+    "category": "Disability",
+    "sub_category": "Livelihood",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Livelihood support in Tamil Nadu for persons with disability.",
+    "benefits_summary": "\u20b920,000",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "disability",
+        "op": "in",
+        "value": [
+          "yes",
+          "disabled"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b920,000"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-tn-dis-002",
+        "official_application_url": "https://example.gov.in/demo/demo-tn-dis-002/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-DIS-003",
+    "scheme_name": "DEMO Inclusive Education Aid",
+    "category": "Disability",
+    "sub_category": "Education",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Education aid for students with disability.",
+    "benefits_summary": "\u20b915,000",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "disability",
+        "op": "in",
+        "value": [
+          "yes",
+          "disabled"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 30,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b915,000"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-dis-003",
+        "official_application_url": "https://example.gov.in/demo/demo-in-dis-003/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-DIS-004",
+    "scheme_name": "DEMO Caregiver Support",
+    "category": "Disability",
+    "sub_category": "Care",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Caregiver stipend demo.",
+    "benefits_summary": "\u20b93,000/month",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "disability",
+        "op": "in",
+        "value": [
+          "yes",
+          "disabled"
+        ],
+        "required": false
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b93,000/month"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-dis-004",
+        "official_application_url": "https://example.gov.in/demo/demo-in-dis-004/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-DIS-005",
+    "scheme_name": "DEMO Accessible Transport",
+    "category": "Disability",
+    "sub_category": "Transport",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Transport concession demo.",
+    "benefits_summary": "Pass",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "disability",
+        "op": "in",
+        "value": [
+          "yes",
+          "disabled"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Pass"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-dis-005",
+        "official_application_url": "https://example.gov.in/demo/demo-in-dis-005/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-SEN-001",
+    "scheme_name": "DEMO Senior Pension Lite",
+    "category": "Senior Citizens",
+    "sub_category": "Pension",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Demo pension for seniors.",
+    "benefits_summary": "\u20b91,000/month",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 60,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b91,000/month"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-sen-001",
+        "official_application_url": "https://example.gov.in/demo/demo-in-sen-001/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-TN-SEN-002",
+    "scheme_name": "DEMO TN Elder Care",
+    "category": "Senior Citizens",
+    "sub_category": "Care",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Elder care support in Tamil Nadu.",
+    "benefits_summary": "Care visits",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 60,
+        "required": true
+      },
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Care visits"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-tn-sen-002",
+        "official_application_url": "https://example.gov.in/demo/demo-tn-sen-002/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-SEN-003",
+    "scheme_name": "DEMO Senior Food Security",
+    "category": "Senior Citizens",
+    "sub_category": "Food",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Food support for seniors with low income.",
+    "benefits_summary": "Ration",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 60,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 200000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Ration"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-sen-003",
+        "official_application_url": "https://example.gov.in/demo/demo-in-sen-003/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-SEN-004",
+    "scheme_name": "DEMO Reverse Mortgage Demo",
+    "category": "Senior Citizens",
+    "sub_category": "Housing",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Housing liquidity demo for seniors.",
+    "benefits_summary": "Advisory",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 60,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Advisory"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-sen-004",
+        "official_application_url": "https://example.gov.in/demo/demo-in-sen-004/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-SEN-005",
+    "scheme_name": "DEMO Elder Skill Volunteer",
+    "category": "Senior Citizens",
+    "sub_category": "Community",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Volunteer stipend for retired professionals.",
+    "benefits_summary": "Honorarium",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 55,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Honorarium"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-sen-005",
+        "official_application_url": "https://example.gov.in/demo/demo-in-sen-005/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-TN-ENT-001",
+    "scheme_name": "DEMO TN First Business Support",
+    "category": "Entrepreneurship",
+    "sub_category": "Startup",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Support for residents of Tamil Nadu who want to start a small business.",
+    "benefits_summary": "\u20b91,00,000 seed (demo)",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 35,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 300000,
+        "required": true
+      },
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "business",
+        "op": "in",
+        "value": [
+          "planning",
+          "unknown",
+          "none"
+        ],
+        "required": false
+      },
+      {
+        "rule_type": "employment",
+        "op": "in",
+        "value": [
+          "unemployed",
+          "job_seeker",
+          "self_employed"
+        ],
+        "required": false
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b91,00,000 seed (demo)"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-tn-ent-001",
+        "official_application_url": "https://example.gov.in/demo/demo-tn-ent-001/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-ENT-002",
+    "scheme_name": "DEMO Micro Enterprise Credit",
+    "category": "Entrepreneurship",
+    "sub_category": "Credit",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Micro credit for new small businesses.",
+    "benefits_summary": "Credit guarantee (demo)",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 45,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 500000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Credit guarantee (demo)"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-ent-002",
+        "official_application_url": "https://example.gov.in/demo/demo-in-ent-002/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-ENT-003",
+    "scheme_name": "DEMO Women Startup Boost",
+    "category": "Entrepreneurship",
+    "sub_category": "Women",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Entrepreneurship support listed for women founders.",
+    "benefits_summary": "\u20b950,000",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "gender",
+        "op": "in",
+        "value": [
+          "female"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 45,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b950,000"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-ent-003",
+        "official_application_url": "https://example.gov.in/demo/demo-in-ent-003/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-ENT-004",
+    "scheme_name": "DEMO Street Vendor Cart",
+    "category": "Entrepreneurship",
+    "sub_category": "Vendor",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Cart/kiosk support for micro vendors.",
+    "benefits_summary": "Equipment",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 300000,
+        "required": true
+      },
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Equipment"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-ent-004",
+        "official_application_url": "https://example.gov.in/demo/demo-in-ent-004/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-KA-ENT-005",
+    "scheme_name": "DEMO Karnataka Founder Fellowship",
+    "category": "Entrepreneurship",
+    "sub_category": "Fellowship",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Karnataka",
+    "district": null,
+    "description": "Founder fellowship for Karnataka residents.",
+    "benefits_summary": "Stipend",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Karnataka"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 21,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Stipend"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-ka-ent-005",
+        "official_application_url": "https://example.gov.in/demo/demo-ka-ent-005/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-IN-EDU-006",
+    "scheme_name": "DEMO Digital Learning Stipend",
+    "category": "Education",
+    "sub_category": "Digital",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Device stipend for students in higher education.",
+    "benefits_summary": "Tablet stipend",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "education",
+        "op": "in",
+        "value": [
+          "Student",
+          "Engineering"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 300000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Tablet stipend"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-edu-006",
+        "official_application_url": "https://example.gov.in/demo/demo-in-edu-006/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-TN-EMP-005",
+    "scheme_name": "DEMO TN Career Counselling",
+    "category": "Employment",
+    "sub_category": "Counselling",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Career counselling for unemployed youth in Tamil Nadu.",
+    "benefits_summary": "Counselling sessions",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 35,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 300000,
+        "required": true
+      },
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "employment",
+        "op": "in",
+        "value": [
+          "unemployed",
+          "job_seeker"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Counselling sessions"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-tn-emp-005",
+        "official_application_url": "https://example.gov.in/demo/demo-tn-emp-005/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-XX-EXP-001",
+    "scheme_name": "DEMO Expired Youth Grant",
+    "category": "Financial Assistance",
+    "sub_category": "Expired",
+    "government_level": "state",
+    "department": "Demo Department of Civic Benefits",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Expired demo record used to test deadline handling.",
+    "benefits_summary": "\u20b91",
+    "application_status": "closed",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2020-01-01",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "expired",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 35,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 300000,
+        "required": true
+      },
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "\u20b91"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-xx-exp-001",
+        "official_application_url": "https://example.gov.in/demo/demo-xx-exp-001/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  },
+  {
+    "scheme_id": "DEMO-XX-REV-001",
+    "scheme_name": "DEMO Needs Review Incomplete",
+    "category": "Healthcare",
+    "sub_category": "Review",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Incomplete demo record missing official source.",
+    "benefits_summary": "Unknown",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "needs_review",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 1,
+        "required": false
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Unknown"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": []
+  },
+  {
+    "scheme_id": "DEMO-IN-EMP-006",
+    "scheme_name": "DEMO Graduate Placement Drive",
+    "category": "Employment",
+    "sub_category": "Campus",
+    "government_level": "central",
+    "department": "Demo Department of Civic Benefits",
+    "state": null,
+    "district": null,
+    "description": "Placement drive for recent graduates.",
+    "benefits_summary": "Interview slots",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the demo portal",
+      "Upload documents",
+      "Submit application"
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-01",
+    "verification_status": "demo",
+    "is_demo": true,
+    "demo_banner": "DEMO DATA \u2013 Replace with verified official scheme information.",
+    "rules": [
+      {
+        "rule_type": "education",
+        "op": "in",
+        "value": [
+          "Graduate",
+          "Engineering"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "employment",
+        "op": "in",
+        "value": [
+          "unemployed",
+          "job_seeker"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 28,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Interview slots"
+      }
+    ],
+    "documents": [
+      {
+        "name": "Identity proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Address proof",
+        "notes": "Demo only"
+      },
+      {
+        "name": "Income certificate",
+        "notes": "If applicable"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://example.gov.in/demo/demo-in-emp-006",
+        "official_application_url": "https://example.gov.in/demo/demo-in-emp-006/apply",
+        "last_verified_date": "2026-08-01"
+      }
+    ]
+  }
+]

@@ -118,6 +118,13 @@ def evaluate_rule(rule: dict[str, Any], profile: dict[str, Any]) -> RuleTrace:
 def combine_status(traces: list[RuleTrace], *, expired: bool = False) -> str:
     if expired:
         return NOT_ELIGIBLE
+    if not traces:
+        # No rules to evaluate against must never fall through to a confident
+        # ELIGIBLE - that's exactly the "app claims something it doesn't know"
+        # failure mode. Most common cause: a pipeline-sourced scheme whose
+        # eligibility rules haven't been extracted/confirmed yet (see
+        # trust/sanity.py's "no eligibility rules extracted" check).
+        return NEEDS_INFO
     required = [t for t in traces if t.required]
     if any(t.result == "fail" and t.required for t in traces):
         return NOT_ELIGIBLE

@@ -1,0 +1,1004 @@
+[
+  {
+    "scheme_id": "TN-EDU-PUDHUMAI-PENN",
+    "scheme_name": "Moovalur Ramamirtham Ammaiyar Higher Education Assurance Scheme (Pudhumai Penn)",
+    "category": "Education",
+    "sub_category": "Higher Education Assurance",
+    "government_level": "state",
+    "department": "Social Welfare and Women Empowerment Department, Government of Tamil Nadu",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Financial assistance scheme by the Government of Tamil Nadu to encourage female students from government schools to pursue higher education (undergraduate degrees, diplomas, ITI) without financial burden.",
+    "benefits_summary": "₹1,000 per month direct bank transfer until completion of undergraduate course / diploma.",
+    "application_status": "open",
+    "application_steps": [
+      "Enroll in an accredited college / university / polytechnic after passing 12th standard from a TN Government school.",
+      "Submit Aadhaar, bank passbook, and school transfer certificate (TC) to the college nodal officer.",
+      "College nodal officer registers the student on the official Pudhumai Penn portal.",
+      "Monthly incentive of ₹1,000 is directly credited via DBT to the student's Aadhaar-linked bank account."
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-31",
+    "verification_status": "VERIFIED",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [
+      {
+        "rule_type": "gender",
+        "op": "in",
+        "value": [
+          "female"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "education",
+        "op": "in",
+        "value": [
+          "Student",
+          "Graduate",
+          "Engineering"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "₹1,000 per month direct financial grant into student's bank account throughout course duration."
+      },
+      {
+        "text": "Prevents female dropout rates and promotes women empowerment through higher education."
+      }
+    ],
+    "documents": [
+      {
+        "name": "School Transfer Certificate / Study Certificate",
+        "notes": "Proof of studying 6th to 12th std in TN Govt school"
+      },
+      {
+        "name": "Aadhaar Card",
+        "notes": "Mandatory for DBT authentication"
+      },
+      {
+        "name": "Bank Passbook Copy",
+        "notes": "Single-holder savings account in student's name linked with Aadhaar"
+      },
+      {
+        "name": "College Admission Proof / ID Card",
+        "notes": "Bonafide student certificate from current institution"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://www.pudhumaipenn.tn.gov.in/",
+        "official_application_url": "https://www.pudhumaipenn.tn.gov.in/",
+        "last_verified_date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "scheme_id": "TN-SKL-NAAN-MUDHALVAN",
+    "scheme_name": "Naan Mudhalvan Skill Development Scheme",
+    "category": "Employment",
+    "sub_category": "Skill Development & Placement",
+    "government_level": "state",
+    "department": "Tamil Nadu Skill Development Corporation (TNSDC), Special Programme Implementation Department",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Flagship youth skill enhancement initiative by the Government of Tamil Nadu providing industry-aligned technical, vocational, soft skills, and emerging tech training to college students and job seekers.",
+    "benefits_summary": "Free industry-certified courses, technical skill training, and recruitment placement drives.",
+    "application_status": "open",
+    "application_steps": [
+      "Register on the Naan Mudhalvan portal using mobile number and student/citizen credentials.",
+      "Browse domain-specific courses (Technology, Engineering, Banking, Logistics, IT).",
+      "Complete coursework and earn industry-recognized certification.",
+      "Participate in statewide campus and regional job placement drives."
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-31",
+    "verification_status": "VERIFIED",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 17,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 30,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Free access to emerging tech courses (Data Science, Cloud, EV, AI, Embedded Systems)."
+      },
+      {
+        "text": "Direct placement opportunities with top industrial and IT employers in Tamil Nadu."
+      }
+    ],
+    "documents": [
+      {
+        "name": "Aadhaar Card",
+        "notes": "Identity and Tamil Nadu residency proof"
+      },
+      {
+        "name": "College / Educational Qualification Certificate",
+        "notes": "Proof of current student or graduate status"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://www.naanmudhalvan.tn.gov.in/",
+        "official_application_url": "https://www.naanmudhalvan.tn.gov.in/",
+        "last_verified_date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "scheme_id": "IN-AGR-PM-KISAN",
+    "scheme_name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "category": "Agriculture",
+    "sub_category": "Direct Income Support",
+    "government_level": "central",
+    "department": "Department of Agriculture and Farmers Welfare, Ministry of Agriculture & Farmers Welfare",
+    "state": null,
+    "district": null,
+    "description": "Central Sector Scheme providing income support to all landholding farmer families across the country to assist in procuring agricultural inputs and domestic needs.",
+    "benefits_summary": "₹6,000 per year directly credited in 3 equal four-monthly installments of ₹2,000.",
+    "application_status": "open",
+    "application_steps": [
+      "Visit the PM-KISAN official portal or visit the nearest Common Service Centre (CSC) / e-Sevai centre.",
+      "Fill in Farmer Registration Form with Aadhaar number, bank account details, and land ownership record.",
+      "Complete mandatory Aadhaar-based e-KYC on the portal via OTP or biometric authentication.",
+      "State agriculture department verifies records and approves DBT disbursement."
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-31",
+    "verification_status": "VERIFIED",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [
+      {
+        "rule_type": "farmer",
+        "op": "in",
+        "value": [
+          "farmer",
+          "yes"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "₹6,000 annual direct income support credited directly into bank account via DBT."
+      },
+      {
+        "text": "Timely financial support prior to sowing/harvest seasons for seeds, fertilizers, and equipment."
+      }
+    ],
+    "documents": [
+      {
+        "name": "Aadhaar Card",
+        "notes": "Mandatory for registration and biometric e-KYC"
+      },
+      {
+        "name": "Land Records / Patta / Chitta",
+        "notes": "Proof of cultivable agricultural land ownership"
+      },
+      {
+        "name": "Bank Account Passbook",
+        "notes": "Aadhaar-seeded bank account for DBT payment"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://pmkisan.gov.in/",
+        "official_application_url": "https://pmkisan.gov.in/RegistrationFormNew.aspx",
+        "last_verified_date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "scheme_id": "TN-HLT-CMCHIS",
+    "scheme_name": "Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS)",
+    "category": "Healthcare",
+    "sub_category": "Cashless Health Insurance",
+    "government_level": "state",
+    "department": "Health and Family Welfare Department, Government of Tamil Nadu",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Comprehensive cashless health insurance scheme implemented by the Government of Tamil Nadu covering low-income families for specified serious ailments, surgeries, and diagnostic procedures.",
+    "benefits_summary": "Cashless hospitalization coverage up to ₹5,00,000 per family per year across network hospitals.",
+    "application_status": "open",
+    "application_steps": [
+      "Obtain Income Certificate from Village Administrative Officer (VAO) / Revenue Department showing annual income ≤ ₹1,20,000.",
+      "Visit District Kiosk at District Collectorate or designated Taluk Hospital with Smart Family Ration Card.",
+      "Submit biometric and demographic details to receive CMCHIS Smart Card.",
+      "Show CMCHIS Card at any empaneled government or private hospital for cashless treatment."
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-31",
+    "verification_status": "VERIFIED",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 120000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Up to ₹5,00,000 per family per year for over 1,090 surgical procedures and 400+ medical packages."
+      },
+      {
+        "text": "Cashless coverage at over 1,000 government and private empaneled hospitals across Tamil Nadu."
+      }
+    ],
+    "documents": [
+      {
+        "name": "Smart Family Ration Card",
+        "notes": "Proof of Tamil Nadu family residency"
+      },
+      {
+        "name": "Income Certificate",
+        "notes": "Issued by VAO/Revenue showing annual income ≤ ₹1.2 Lakhs"
+      },
+      {
+        "name": "Aadhaar Card of Family Members",
+        "notes": "For individual beneficiary identification"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://www.cmchistn.com/",
+        "official_application_url": "https://www.cmchistn.com/",
+        "last_verified_date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "scheme_id": "IN-HLT-PMJAY",
+    "scheme_name": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (AB-PMJAY)",
+    "category": "Healthcare",
+    "sub_category": "National Health Protection",
+    "government_level": "central",
+    "department": "National Health Authority (NHA), Ministry of Health and Family Welfare",
+    "state": null,
+    "district": null,
+    "description": "The world's largest government-funded health assurance scheme, providing a health cover of ₹5 Lakhs per family per year for secondary and tertiary care hospitalization to over 12 crore poor and vulnerable families.",
+    "benefits_summary": "₹5,00,000 cashless health insurance coverage per family per year for hospital care.",
+    "application_status": "open",
+    "application_steps": [
+      "Check beneficiary eligibility on beneficiary.nha.gov.in using mobile number, Aadhaar, or Ration Card.",
+      "Complete e-KYC online or visit nearest CSC / Ayushman Mitra at an empaneled hospital.",
+      "Download Ayushman Card (Golden Card) upon approval.",
+      "Avail cashless hospital admission and treatment across all empaneled hospitals nationwide."
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-31",
+    "verification_status": "VERIFIED",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 250000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "₹5,00,000 health cover per family per year with no cap on family size or age."
+      },
+      {
+        "text": "Covers medical examinations, treatments, consultation, pre- and post-hospitalization costs for 3 days and 15 days."
+      }
+    ],
+    "documents": [
+      {
+        "name": "Aadhaar Card",
+        "notes": "Mandatory identity and biometric verification document"
+      },
+      {
+        "name": "Ration Card / PMJAY Family Letter",
+        "notes": "Proof of beneficiary inclusion in eligible database"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://nha.gov.in/PM-JAY",
+        "official_application_url": "https://beneficiary.nha.gov.in/",
+        "last_verified_date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "scheme_id": "IN-ENT-MUDRA",
+    "scheme_name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "category": "Entrepreneurship",
+    "sub_category": "Micro & Small Enterprise Loan",
+    "government_level": "central",
+    "department": "Department of Financial Services, Ministry of Finance",
+    "state": null,
+    "district": null,
+    "description": "Flagship scheme to fund the unfunded by facilitating collateral-free institutional loans up to ₹10 Lakhs (up to ₹20 Lakhs for Tarun Plus) to micro and small non-corporate, non-farm enterprises.",
+    "benefits_summary": "Collateral-free institutional loans up to ₹10 Lakhs across Shishu, Kishore, and Tarun categories.",
+    "application_status": "open",
+    "application_steps": [
+      "Prepare business plan/proposal for setting up or expanding small enterprise (shop, service, manufacturing).",
+      "Apply online through the official UdyamiMitra portal or visit any commercial, regional rural, or microfinance bank.",
+      "Submit identity proof, address proof, business address proof, and quotation for machinery/goods.",
+      "Bank reviews application and disburses loan without requiring collateral security."
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-31",
+    "verification_status": "VERIFIED",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "business",
+        "op": "in",
+        "value": [
+          "planning",
+          "registered",
+          "unknown",
+          "none"
+        ],
+        "required": false
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Shishu: Loans up to ₹50,000 for new starters."
+      },
+      {
+        "text": "Kishore: Loans above ₹50,000 and up to ₹5 Lakhs for middle-stage development."
+      },
+      {
+        "text": "Tarun: Loans above ₹5 Lakhs and up to ₹10 Lakhs for established enterprises."
+      },
+      {
+        "text": "Zero collateral security required; nominal processing charges for micro-loans."
+      }
+    ],
+    "documents": [
+      {
+        "name": "Proof of Identity (Aadhaar / Voter ID / PAN)",
+        "notes": "Mandatory identity verification"
+      },
+      {
+        "name": "Proof of Residence",
+        "notes": "Recent utility bill / Aadhaar / Ration card"
+      },
+      {
+        "name": "Business Address and Registration Proof (if existing)",
+        "notes": "Udyam registration or shop license"
+      },
+      {
+        "name": "Bank Account Statements",
+        "notes": "Last 6 months bank statement"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://www.mudra.org.in/",
+        "official_application_url": "https://www.udyamimitra.in/",
+        "last_verified_date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "scheme_id": "TN-EMP-UYEGP",
+    "scheme_name": "Unemployed Youth Employment Generation Programme (UYEGP)",
+    "category": "Employment",
+    "sub_category": "Self-Employment Subsidy Scheme",
+    "government_level": "state",
+    "department": "Department of Industries and Commerce (MSME), Government of Tamil Nadu",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Self-employment scheme in Tamil Nadu to mitigate unemployment among youth by facilitating institutional loan finance with a 25% Government capital subsidy for establishing micro-enterprises in manufacturing, service, and business sectors.",
+    "benefits_summary": "Loan finance up to ₹15 Lakhs for manufacturing / ₹5 Lakhs for service/business with 25% govt subsidy.",
+    "application_status": "open",
+    "application_steps": [
+      "Apply online on the official Tamil Nadu MSME Online portal (msmeonline.tn.gov.in/uyegp).",
+      "Upload 8th/10th pass certificate, TC, Aadhaar, project profile, and community/income certificate.",
+      "Attend interview conducted by District Task Force Committee (DTFC) at District Industries Centre (DIC).",
+      "Upon DTFC recommendation, bank sanctions loan and DIC releases 25% government subsidy."
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-31",
+    "verification_status": "VERIFIED",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 45,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 500000,
+        "required": true
+      },
+      {
+        "rule_type": "employment",
+        "op": "in",
+        "value": [
+          "unemployed",
+          "job_seeker",
+          "self_employed"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Project cost up to ₹15 Lakhs for manufacturing, ₹5 Lakhs for service, and ₹5 Lakhs for business."
+      },
+      {
+        "text": "25% government capital subsidy (up to ₹1.25 Lakhs) directly adjusted against bank loan."
+      },
+      {
+        "text": "Mandatory 7-day Entrepreneurship Development Programme (EDP) training included free of cost."
+      }
+    ],
+    "documents": [
+      {
+        "name": "Educational Qualification Certificate",
+        "notes": "Minimum 8th pass certificate / TC"
+      },
+      {
+        "name": "Aadhaar Card & Proof of Residence",
+        "notes": "Minimum 3 years residence proof in Tamil Nadu"
+      },
+      {
+        "name": "Income Certificate",
+        "notes": "Family annual income not exceeding ₹5 Lakhs"
+      },
+      {
+        "name": "Detailed Project Report (DPR)",
+        "notes": "Cost estimate and machinery quotation for proposed business"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://www.msmeonline.tn.gov.in/uyegp/",
+        "official_application_url": "https://www.msmeonline.tn.gov.in/uyegp/",
+        "last_verified_date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "scheme_id": "IN-HOU-PMAY-U",
+    "scheme_name": "Pradhan Mantri Awas Yojana - Urban (PMAY-U)",
+    "category": "Housing",
+    "sub_category": "Affordable Urban Housing",
+    "government_level": "central",
+    "department": "Ministry of Housing and Urban Affairs (MoHUA) / TN Urban Habitat Development Board",
+    "state": null,
+    "district": null,
+    "description": "Flagship mission of Government of India to provide all-weather pucca houses to eligible urban households belonging to EWS, LIG, and MIG categories across India, including Tamil Nadu.",
+    "benefits_summary": "Financial assistance / interest subsidy up to ₹2.5 Lakhs for construction or purchase of pucca house.",
+    "application_status": "open",
+    "application_steps": [
+      "Log on to the PMAY-U official portal or visit local urban local body (Municipality/Corporation) office / CSC.",
+      "Choose component: Beneficiary-led Individual House Construction (BLC) or Affordable Housing in Partnership (AHP).",
+      "Submit Aadhaar details, family income details, and land/property documents.",
+      "Municipal / District authorities inspect site and release milestone-based construction grants."
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-31",
+    "verification_status": "VERIFIED",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 21,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 600000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Central assistance up to ₹1.5 Lakhs per house under Beneficiary-Led Construction (BLC)."
+      },
+      {
+        "text": "Additional state government top-up subsidy provided through TN Urban Habitat Development Board."
+      },
+      {
+        "text": "Ensures permanent housing with basic water, sanitation, and electricity connections."
+      }
+    ],
+    "documents": [
+      {
+        "name": "Aadhaar Card of all family members",
+        "notes": "Mandatory beneficiary identification"
+      },
+      {
+        "name": "Income Certificate",
+        "notes": "Annual family income certificate for EWS/LIG classification"
+      },
+      {
+        "name": "Land Title / Patta Document",
+        "notes": "Proof of ownership of clear land for construction (for BLC)"
+      },
+      {
+        "name": "Affidavit confirming no other pucca house owned in India",
+        "notes": "Mandatory self-declaration"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://pmay-urban.gov.in/",
+        "official_application_url": "https://pmay-urban.gov.in/",
+        "last_verified_date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "scheme_id": "IN-SEN-IGNOAPS",
+    "scheme_name": "Indira Gandhi National Old Age Pension Scheme (IGNOAPS)",
+    "category": "Senior Citizens",
+    "sub_category": "Social Security Pension",
+    "government_level": "central",
+    "department": "National Social Assistance Programme (NSAP), Ministry of Rural Development / TN Revenue Dept",
+    "state": null,
+    "district": null,
+    "description": "Non-contributory monthly pension scheme for senior citizens aged 60 years and above living Below Poverty Line (BPL) to provide dignified social security and livelihood support in old age.",
+    "benefits_summary": "Monthly pension of ₹1,000 (standard in Tamil Nadu through combined state-central NSAP funding).",
+    "application_status": "open",
+    "application_steps": [
+      "Apply online via Tamil Nadu e-Sevai portal (tnesevai.tn.gov.in) or visit local Taluk Office / Revenue Inspector.",
+      "Submit proof of age (Aadhaar/Voter ID), BPL card/Ration card, and bank passbook.",
+      "Village Administrative Officer (VAO) and Revenue Inspector inspect and certify destitution / income status.",
+      "Special Tahsildar sanctions pension order, credited directly to the senior citizen's bank account every month."
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-31",
+    "verification_status": "VERIFIED",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 60,
+        "required": true
+      },
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 150000,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Monthly pension of ₹1,000 directly credited to bank account or postal savings."
+      },
+      {
+        "text": "Provides essential financial independence for senior citizens lacking familial support."
+      }
+    ],
+    "documents": [
+      {
+        "name": "Age Proof (Aadhaar / Voter ID / Birth Certificate)",
+        "notes": "Applicant must be 60 years or older"
+      },
+      {
+        "name": "BPL Card / Family Ration Card",
+        "notes": "Proof of economic status below poverty line"
+      },
+      {
+        "name": "Bank Passbook Copy",
+        "notes": "Single savings account in applicant's name"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://nsap.nic.in/",
+        "official_application_url": "https://tnesevai.tn.gov.in/",
+        "last_verified_date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "scheme_id": "TN-DIS-MAINTENANCE",
+    "scheme_name": "Tamil Nadu Maintenance Allowance for Differently Abled Persons",
+    "category": "Disability",
+    "sub_category": "Monthly Maintenance Allowance",
+    "government_level": "state",
+    "department": "Directorate for Welfare of the Differently Abled, Government of Tamil Nadu",
+    "state": "Tamil Nadu",
+    "district": null,
+    "description": "Welfare scheme by the Government of Tamil Nadu providing monthly financial maintenance allowance to persons with severe disabilities (40% and above disability, intellectual disability, muscular dystrophy, leprosy, Parkinson's disease).",
+    "benefits_summary": "Monthly financial assistance of ₹1,500 to ₹2,000 directly credited to the beneficiary's bank account.",
+    "application_status": "open",
+    "application_steps": [
+      "Obtain Unique Disability ID (UDID) Card / National Disability Identity Card from District Differently Abled Welfare Officer (DDAWO).",
+      "Submit application via Tamil Nadu e-Sevai portal or directly at the District Collectorate DDAWO office.",
+      "Submit Aadhaar, UDID card, medical board certificate, and bank details.",
+      "Monthly allowance is sanctioned and credited directly into beneficiary's bank account via ECS."
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-31",
+    "verification_status": "VERIFIED",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [
+      {
+        "rule_type": "residency_state",
+        "op": "in",
+        "value": [
+          "Tamil Nadu"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "disability",
+        "op": "in",
+        "value": [
+          "yes",
+          "true",
+          "disabled"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "₹1,500 to ₹2,000 monthly maintenance allowance credited through electronic clearance (ECS)."
+      },
+      {
+        "text": "Assists severely differently abled persons in meeting daily subsistence and medication expenses."
+      }
+    ],
+    "documents": [
+      {
+        "name": "UDID Card / Disability Certificate",
+        "notes": "Medical board certificate indicating ≥ 40% disability"
+      },
+      {
+        "name": "Aadhaar Card",
+        "notes": "Proof of identity and residence in Tamil Nadu"
+      },
+      {
+        "name": "Bank Passbook",
+        "notes": "Bank account linked with Aadhaar in beneficiary's name"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://scd.tn.gov.in/",
+        "official_application_url": "https://tnesevai.tn.gov.in/",
+        "last_verified_date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "scheme_id": "IN-WCD-PMMVY",
+    "scheme_name": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+    "category": "Women & Child",
+    "sub_category": "Maternity Benefit Scheme",
+    "government_level": "central",
+    "department": "Ministry of Women and Child Development (MoWCD), Government of India",
+    "state": null,
+    "district": null,
+    "description": "Direct Benefit Transfer (DBT) maternity benefit scheme providing cash incentives to pregnant women and lactating mothers for wage loss compensation and promoting healthy institutional birth and child immunization.",
+    "benefits_summary": "₹5,000 for 1st living child (in 2 installments) and ₹6,000 for 2nd child if newborn is a girl.",
+    "application_status": "open",
+    "application_steps": [
+      "Register pregnancy at the nearest Anganwadi Centre (AWC) / Primary Health Centre (PHC) within 150 days of LMP.",
+      "Fill Form 1A with Mother-Child Protection (MCP) card and Aadhaar details on pmmvy.wcd.gov.in.",
+      "First installment (₹3,000) credited upon registration and at least one antenatal checkup.",
+      "Second installment (₹2,000) credited upon institutional childbirth and primary vaccination."
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-31",
+    "verification_status": "VERIFIED",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [
+      {
+        "rule_type": "gender",
+        "op": "in",
+        "value": [
+          "female"
+        ],
+        "required": true
+      },
+      {
+        "rule_type": "min_age",
+        "op": "gte",
+        "value": 18,
+        "required": true
+      },
+      {
+        "rule_type": "max_age",
+        "op": "lte",
+        "value": 45,
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "₹5,000 direct cash incentive in 2 installments for the first child."
+      },
+      {
+        "text": "Additional ₹6,000 one-time grant if the second born child is female to incentivize girl child survival."
+      }
+    ],
+    "documents": [
+      {
+        "name": "Mother and Child Protection (MCP) Card",
+        "notes": "Issued by Government Health Centre / Anganwadi"
+      },
+      {
+        "name": "Aadhaar Card of Mother and Husband",
+        "notes": "Mandatory identity proof for DBT"
+      },
+      {
+        "name": "Aadhaar-seeded Bank Passbook of Mother",
+        "notes": "Single bank account in woman's name"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://pmmvy.wcd.gov.in/",
+        "official_application_url": "https://pmmvy.wcd.gov.in/",
+        "last_verified_date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "scheme_id": "IN-FIN-CSIS",
+    "scheme_name": "Central Sector Interest Subsidy Scheme (CSIS) on Education Loans",
+    "category": "Financial Assistance",
+    "sub_category": "Higher Education Loan Subsidy",
+    "government_level": "central",
+    "department": "Department of Higher Education, Ministry of Education, Government of India",
+    "state": null,
+    "district": null,
+    "description": "Central scheme providing full interest subsidy during the moratorium period (course period + 1 year) on education loans availed by students from economically weaker sections for recognized technical and professional courses in India.",
+    "benefits_summary": "100% interest subsidy during course study and 1-year moratorium period on education loans.",
+    "application_status": "open",
+    "application_steps": [
+      "Apply for educational loan through the official Vidya Lakshmi portal (vidyalakshmi.co.in) at any scheduled commercial bank.",
+      "Submit annual gross parental income certificate (≤ ₹4.5 Lakhs) issued by competent state revenue authority.",
+      "Bank flags loan account under CSIS on the Canara Bank nodal portal.",
+      "Government of India reimburses entire loan interest to bank during the study and moratorium period."
+    ],
+    "deadline": "2027-12-31",
+    "last_verified_date": "2026-08-31",
+    "verification_status": "VERIFIED",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [
+      {
+        "rule_type": "income_max",
+        "op": "lte",
+        "value": 450000,
+        "required": true
+      },
+      {
+        "rule_type": "education",
+        "op": "in",
+        "value": [
+          "Student",
+          "Engineering",
+          "Graduate"
+        ],
+        "required": true
+      }
+    ],
+    "benefits": [
+      {
+        "text": "Full interest waived during entire course duration plus one year post-completion."
+      },
+      {
+        "text": "Significant financial relief for students pursuing engineering, medicine, and professional degrees."
+      }
+    ],
+    "documents": [
+      {
+        "name": "Income Certificate",
+        "notes": "Gross annual family income ≤ ₹4.5 Lakhs from authorized authority"
+      },
+      {
+        "name": "Admission Confirmation & Fee Structure",
+        "notes": "Bonafide proof of enrollment in recognized professional college"
+      },
+      {
+        "name": "Aadhaar Card & PAN Card",
+        "notes": "Borrower and co-borrower identity documents"
+      }
+    ],
+    "sources": [
+      {
+        "official_source": "https://www.education.gov.in/scholarships-education-loan-0",
+        "official_application_url": "https://www.vidyalakshmi.co.in/",
+        "last_verified_date": "2026-08-31"
+      }
+    ]
+  },
+  {
+    "scheme_id": "IN-UTL-PMUY",
+    "scheme_name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+    "category": "Financial Assistance",
+    "sub_category": "LPG Connection Subsidy",
+    "government_level": "central",
+    "department": "Ministry of Petroleum and Natural Gas, Government of India",
+    "state": null,
+    "district": null,
+    "description": "Central scheme providing free LPG (cooking gas) connections to women from Below Poverty Line (BPL) households, to replace unsafe cooking fuels with clean cooking gas.",
+    "benefits_summary": "Free LPG connection plus financial assistance for the first refill and stove, deposit-free.",
+    "application_status": "open",
+    "application_steps": [],
+    "deadline": null,
+    "last_verified_date": null,
+    "verification_status": "needs_review",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [],
+    "benefits": [],
+    "documents": [],
+    "sources": [
+      {
+        "official_source": "https://www.pmuy.gov.in/",
+        "official_application_url": "https://www.pmuy.gov.in/",
+        "last_verified_date": null
+      }
+    ]
+  },
+  {
+    "scheme_id": "IN-AGR-PMFBY",
+    "scheme_name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "category": "Agriculture",
+    "sub_category": "Crop Insurance",
+    "government_level": "central",
+    "department": "Ministry of Agriculture and Farmers Welfare, Government of India",
+    "state": null,
+    "district": null,
+    "description": "Government-sponsored crop insurance scheme providing affordable, comprehensive risk cover for farmers against crop loss from non-preventable natural risks, from pre-sowing to post-harvest.",
+    "benefits_summary": "Insurance payout for crop loss due to natural calamities, pests, and disease; premium cost shared between farmer and government.",
+    "application_status": "open",
+    "application_steps": [],
+    "deadline": null,
+    "last_verified_date": null,
+    "verification_status": "needs_review",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [],
+    "benefits": [],
+    "documents": [],
+    "sources": [
+      {
+        "official_source": "https://pmfby.gov.in/",
+        "official_application_url": "https://pmfby.gov.in/",
+        "last_verified_date": null
+      }
+    ]
+  },
+  {
+    "scheme_id": "IN-ENT-SVANIDHI",
+    "scheme_name": "Pradhan Mantri Street Vendor's AtmaNirbhar Nidhi (PM SVANidhi)",
+    "category": "Entrepreneurship",
+    "sub_category": "Micro-credit for Street Vendors",
+    "government_level": "central",
+    "department": "Ministry of Housing and Urban Affairs, Government of India",
+    "state": null,
+    "district": null,
+    "description": "Micro-credit scheme providing affordable working capital loans to urban street vendors to help them resume and grow their livelihoods.",
+    "benefits_summary": "Collateral-free working capital loans in escalating tranches for street vendors, with interest subsidy on timely repayment.",
+    "application_status": "open",
+    "application_steps": [],
+    "deadline": null,
+    "last_verified_date": null,
+    "verification_status": "needs_review",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [],
+    "benefits": [],
+    "documents": [],
+    "sources": [
+      {
+        "official_source": "https://pmsvanidhi.mohua.gov.in/",
+        "official_application_url": "https://pmsvanidhi.mohua.gov.in/",
+        "last_verified_date": null
+      }
+    ]
+  },
+  {
+    "scheme_id": "IN-FIN-APY",
+    "scheme_name": "Atal Pension Yojana (APY)",
+    "category": "Financial Assistance",
+    "sub_category": "Retirement Pension Savings",
+    "government_level": "central",
+    "department": "Pension Fund Regulatory and Development Authority (PFRDA), Government of India",
+    "state": null,
+    "district": null,
+    "description": "Government-backed voluntary pension scheme open to Indian citizens aged 18-40 with a savings bank account, providing a fixed guaranteed monthly pension after age 60 based on contributions made.",
+    "benefits_summary": "Fixed monthly pension of ₹1,000 to ₹5,000 after age 60, depending on the contribution slab chosen.",
+    "application_status": "open",
+    "application_steps": [],
+    "deadline": null,
+    "last_verified_date": null,
+    "verification_status": "needs_review",
+    "is_demo": false,
+    "demo_banner": "",
+    "rules": [],
+    "benefits": [],
+    "documents": [],
+    "sources": [
+      {
+        "official_source": "https://www.npscra.proteantech.in/scheme-details.php",
+        "official_application_url": "https://www.npscra.proteantech.in/scheme-details.php",
+        "last_verified_date": null
+      }
+    ]
+  }
+]

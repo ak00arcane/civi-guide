@@ -44,6 +44,11 @@ class SavedIn(BaseModel):
     personal_status: str = "saved"
 
 
+class SchemeReportIn(BaseModel):
+    scheme_id: str
+    reason: str = Field(min_length=1, max_length=1000)
+
+
 class AdminSchemeIn(BaseModel):
     scheme_id: str
     scheme_name: str

@@ -19,6 +19,20 @@ def load_catalog() -> list[dict]:
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
     records = mod.catalog()
+    json_path.parent.mkdir(parents=True, exist_ok=True)
+    json_path.write_text(json.dumps(records, indent=2), encoding="utf-8")
+    return records
+
+
+def load_verified_catalog() -> list[dict]:
+    json_path = ROOT / "data" / "verified" / "schemes.json"
+    if json_path.exists():
+        return json.loads(json_path.read_text(encoding="utf-8"))
+    spec = importlib.util.spec_from_file_location("verified_catalog", ROOT / "data" / "verified" / "catalog.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    records = mod.verified_catalog()
+    json_path.parent.mkdir(parents=True, exist_ok=True)
     json_path.write_text(json.dumps(records, indent=2), encoding="utf-8")
     return records
 
@@ -57,8 +71,11 @@ def scheme_to_dict(s: Scheme) -> dict:
         "deadline": s.deadline.isoformat() if s.deadline else None,
         "last_verified_date": s.last_verified_date.isoformat() if s.last_verified_date else None,
         "verification_status": s.verification_status,
+        "confidence": s.confidence,
+        "trust_mode": s.trust_mode,
+        "last_scored_at": s.last_scored_at.isoformat() if s.last_scored_at else None,
         "is_demo": s.is_demo,
-        "demo_banner": s.demo_banner,
+        "demo_banner": s.demo_banner if s.is_demo else "",
         "quality_flags": s.quality_flags or [],
         "disclaimer": (
             "CivicGuide is an independent information and recommendation tool. "
@@ -74,11 +91,19 @@ def scheme_to_dict(s: Scheme) -> dict:
 
 def upsert_record(db: Session, rec: dict) -> Scheme:
     flags = validate_scheme(rec)
-    status = rec.get("verification_status", "demo")
+    is_demo = bool(rec.get("is_demo", True))
+    status = rec.get("verification_status", "demo" if is_demo else "VERIFIED")
     if "expired_deadline" in flags:
         status = "expired"
     elif flags and status == "demo" and ("missing_official_source" in flags or "missing_eligibility" in flags):
         status = "needs_review"
+
+    demo_banner = rec.get("demo_banner")
+    if is_demo and not demo_banner:
+        demo_banner = "DEMO DATA – Replace with verified official scheme information."
+    elif not is_demo:
+        demo_banner = ""
+
     existing = db.query(Scheme).filter(Scheme.scheme_id == rec["scheme_id"]).one_or_none()
     fields = dict(
         scheme_name=rec["scheme_name"],
@@ -90,13 +115,13 @@ def upsert_record(db: Session, rec: dict) -> Scheme:
         district=rec.get("district"),
         description=rec["description"],
         benefits_summary=rec.get("benefits_summary"),
-        application_status=rec.get("application_status"),
+        application_status=rec.get("application_status", "open"),
         application_steps=rec.get("application_steps"),
         deadline=_date(rec.get("deadline")),
         last_verified_date=_date(rec.get("last_verified_date")),
         verification_status=status,
-        is_demo=bool(rec.get("is_demo", True)),
-        demo_banner=rec.get("demo_banner") or "DEMO DATA – Replace with verified official scheme information.",
+        is_demo=is_demo,
+        demo_banner=demo_banner,
         quality_flags=flags,
     )
     if existing:
@@ -145,9 +170,23 @@ def upsert_record(db: Session, rec: dict) -> Scheme:
     return scheme
 
 
+def import_verified(db: Session) -> int:
+    records = load_verified_catalog()
+    for rec in records:
+        upsert_record(db, rec)
+    db.commit()
+    return len(records)
+
+
 def import_demo(db: Session) -> int:
     records = load_catalog()
     for rec in records:
         upsert_record(db, rec)
     db.commit()
     return len(records)
+
+
+def import_all(db: Session) -> tuple[int, int]:
+    n_ver = import_verified(db)
+    n_demo = import_demo(db)
+    return n_ver, n_demo

@@ -1,0 +1,128 @@
+# Seed sources for scheme URL discovery.
+#
+# Adding a state is a commit to this file, not new code.
+#
+# method:
+#   sitemap     - read robots.txt Sitemap: lines, plus the usual sitemap paths
+#   index       - crawl the listed index pages and take every same-host link
+#   both        - sitemap first, index pages as a supplement
+#
+# Before enabling any source, check that site's own terms of use. robots.txt
+# being permissive does not override a terms page that bans automated access.
+# myscheme.gov.in is deliberately absent: its terms prohibit bots.
+
+defaults:
+  delay: 1.0
+  max_urls_per_source: 4000
+
+keywords:
+  # A candidate URL must contain one of these (case-insensitive).
+  - scheme
+  - schemes
+  - yojana
+  - yojna
+  - thittam
+  - welfare
+  - subsidy
+  - scholarship
+  - pension
+  - grant
+  - benefit
+  - sahay
+  - sahayata
+  - kalyan
+  - awas
+  - abhiyan
+
+url_blocklist:
+  # Substrings that disqualify a URL outright - these are never scheme pages.
+  - /tender
+  - /recruitment
+  - /vacanc
+  - /login
+  - /press-release
+  - /archive
+  - /rti
+  - /annual-report
+  - /gallery
+  - .jpg
+  - .png
+  - .zip
+  - .xls
+
+sources:
+  - id: india_gov_schemes
+    name: National Portal of India - schemes
+    level: central
+    state: null
+    method: both
+    base_url: https://www.india.gov.in
+    index_pages:
+      - https://www.india.gov.in/my-government/schemes
+    enabled: true
+
+  - id: tn_gov
+    name: Government of Tamil Nadu
+    level: state
+    state: TN
+    method: both
+    base_url: https://www.tn.gov.in
+    index_pages:
+      - https://www.tn.gov.in/scheme
+    enabled: true
+
+  - id: rural_dev
+    name: Ministry of Rural Development
+    level: central
+    state: null
+    method: sitemap
+    base_url: https://rural.gov.in
+    index_pages: []
+    enabled: true
+
+  - id: wcd
+    name: Ministry of Women and Child Development
+    level: central
+    state: null
+    method: sitemap
+    base_url: https://wcd.gov.in
+    index_pages: []
+    enabled: true
+
+  - id: socialjustice
+    name: Ministry of Social Justice and Empowerment
+    level: central
+    state: null
+    method: sitemap
+    base_url: https://socialjustice.gov.in
+    index_pages: []
+    enabled: true
+
+  - id: agriwelfare
+    name: Ministry of Agriculture and Farmers Welfare
+    level: central
+    state: null
+    method: sitemap
+    base_url: https://agriwelfare.gov.in
+    index_pages: []
+    enabled: true
+
+  # Add remaining states below, one block each. Keep enabled: false until the
+  # terms of use for that domain have been checked.
+  - id: ka_gov
+    name: Government of Karnataka
+    level: state
+    state: KA
+    method: sitemap
+    base_url: https://www.karnataka.gov.in
+    index_pages: []
+    enabled: false
+
+  - id: kl_gov
+    name: Government of Kerala
+    level: state
+    state: KL
+    method: sitemap
+    base_url: https://kerala.gov.in
+    index_pages: []
+    enabled: false

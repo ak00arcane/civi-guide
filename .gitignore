@@ -10,6 +10,7 @@ frontend/.next/
 frontend/out/
 *.db
 .DS_Store
+data/raw_snapshots/
 dist/
 *.egg-info/
 .coverage
