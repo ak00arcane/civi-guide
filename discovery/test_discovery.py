@@ -1,6 +1,6 @@
 """Offline tests for the discovery stage. No network access required."""
 
-from classify import extract_text, score_page
+from classify import extract_page_links, extract_text, score_page
 from harvest import is_blocked, links_from_html, matches_keyword, parse_sitemap
 
 KEYWORDS = ["scheme", "yojana", "thittam", "pension"]
@@ -98,6 +98,20 @@ def test_extract_text_drops_scripts_and_keeps_title():
     assert title == "Old Age Pension"
     assert "x=1" not in text
     assert text == "Hello world"
+
+
+def test_extract_page_links_returns_canonical_and_application_candidates():
+    html = """
+    <html><head><link rel="canonical" href="/schemes/example"></head><body>
+      <a href="https://apply.gov.in/start#form">Apply online</a>
+      <a href="javascript:alert(1)">Apply here</a>
+      <a href="/schemes/example">Scheme details</a>
+      <a href="https://apply.gov.in/start">Register</a>
+    </body></html>
+    """
+    canonical, links = extract_page_links(html, "https://dept.gov.in/scheme/example")
+    assert canonical == "https://dept.gov.in/schemes/example"
+    assert links == [{"label": "Apply online", "url": "https://apply.gov.in/start"}]
 
 
 # -- classify: scoring -------------------------------------------------

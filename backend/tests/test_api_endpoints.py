@@ -52,6 +52,12 @@ class TestAPIEndpoints(unittest.TestCase):
         rec_ids = [r["scheme_id"] for r in data["recommendations"]]
         # Real verified scheme Pudhumai Penn should be present
         self.assertIn("TN-EDU-PUDHUMAI-PENN", rec_ids)
+        pudhumai_penn = next(r for r in data["recommendations"] if r["scheme_id"] == "TN-EDU-PUDHUMAI-PENN")
+        self.assertEqual(pudhumai_penn["government_level"], "state")
+        self.assertEqual(
+            next(r for r in data["recommendations"] if r["scheme_id"] == "IN-AGR-PM-KISAN")["government_level"],
+            "central",
+        )
 
 
 if __name__ == "__main__":

@@ -18,6 +18,7 @@ import json
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
+from urllib.parse import urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
@@ -47,6 +48,8 @@ NEGATIVE = [
 
 MIN_TEXT_CHARS = 400
 MAX_TEXT_CHARS = 120_000
+APPLICATION_TERMS = re.compile(r"\b(apply|application|register|registration|enrol|enroll|beneficiary)\b", re.I)
+NON_PAGE_SUFFIXES = (".jpg", ".jpeg", ".png", ".gif", ".svg", ".zip", ".xls", ".xlsx")
 
 
 @dataclass
@@ -70,6 +73,55 @@ def extract_text(html: str) -> tuple[str, str]:
         soup.head.decompose()  # otherwise <title> is counted twice, in title and text
     text = re.sub(r"\s+", " ", soup.get_text(" "))
     return title, text.strip()
+
+
+def extract_page_links(html: str, page_url: str) -> tuple[str | None, list[dict[str, str]]]:
+    """Extract a canonical page URL and candidate application links.
+
+    Application links are suggestions for human review, not trusted destinations.
+    """
+    soup = BeautifulSoup(html, "lxml")
+
+    def safe_https_url(value: str | None) -> str | None:
+        if not value:
+            return None
+        absolute = urljoin(page_url, value.strip()).split("#", 1)[0]
+        parsed = urlparse(absolute)
+        if (
+            parsed.scheme != "https"
+            or not parsed.hostname
+            or parsed.username
+            or parsed.password
+            or parsed.path.lower().endswith(NON_PAGE_SUFFIXES)
+        ):
+            return None
+        return absolute
+
+    canonical_tag = soup.find(
+        "link",
+        rel=lambda value: value and "canonical" in (
+            value if isinstance(value, list) else value.split()
+        ),
+    )
+    canonical_url = safe_https_url(canonical_tag.get("href") if canonical_tag else None)
+
+    links: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for anchor in soup.find_all("a", href=True):
+        href = anchor.get("href", "")
+        label = " ".join(anchor.stripped_strings)
+        context = f"{label} {anchor.get('title', '')} {href}"
+        if not APPLICATION_TERMS.search(context):
+            continue
+        url = safe_https_url(href)
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        links.append({"label": label[:120] or "Application link", "url": url})
+        if len(links) >= 20:
+            break
+
+    return canonical_url, links
 
 
 def score_page(title: str, text: str, url: str = "", threshold: float = 0.55) -> Verdict:
@@ -146,6 +198,10 @@ def main() -> None:
                     record = {**cand, **v.__dict__}
                     record["signals"] = v.signals
                     record["penalties"] = v.penalties
+                    canonical_url, application_links = extract_page_links(result.text, result.final_url)
+                    record["source_url"] = result.final_url
+                    record["canonical_url"] = canonical_url
+                    record["application_links"] = application_links
 
                 if record.get("is_scheme"):
                     kept += 1

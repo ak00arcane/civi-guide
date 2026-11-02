@@ -30,6 +30,7 @@ def _scheme_view(s: Scheme) -> dict:
         "scheme_id": s.scheme_id,
         "scheme_name": s.scheme_name,
         "category": s.category,
+        "government_level": s.government_level,
         "state": s.state,
         "district": s.district,
         "description": s.description,

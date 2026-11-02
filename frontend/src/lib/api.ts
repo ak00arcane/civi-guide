@@ -57,6 +57,7 @@ export interface SchemeItem {
   scheme_id: string;
   scheme_name: string;
   category: string;
+  government_level: "central" | "state" | null;
   state: string | null;
   district: string | null;
   description: string;

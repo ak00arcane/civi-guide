@@ -65,7 +65,7 @@ For a scheme with status `not_eligible`, $c_{eligibility}=0$ and the scheme is e
 
 ### A. Component Architecture
 
-The system is implemented as a Next.js frontend, a FastAPI backend, a SQLAlchemy persistence layer, deterministic NLP and eligibility modules, a recommendation service, and an independent source-trust pipeline.
+The system is implemented as a Next.js frontend, a FastAPI backend, a SQLAlchemy persistence layer, deterministic NLP and eligibility modules, a recommendation service, an independent source-trust pipeline, and an offline government-site discovery pipeline.
 
 ```mermaid
 flowchart TD
@@ -189,6 +189,8 @@ The trust pipeline is independent of the request path. It fetches official sourc
 
 The fetch layer respects robots rules, applies rate limiting and retries, and uses OS-native TLS validation through `truststore`. It does not disable certificate verification. Snapshot normalization reduces false changes caused by markup noise. A watcher exists for re-fetch and re-score operations, but it is manually triggered rather than scheduled in this prototype.
 
+An additional offline discovery stage in `discovery/` walks configured sitemaps and index pages, filters candidate URLs, and scores fetched pages with transparent eligibility/benefit/application signals and tender/recruitment penalties. The classifier now also records each fetched page's final URL, declared canonical URL, and HTTPS links whose anchor text or URL resembles an application route. Those application links are explicitly candidates for human review; discovery output is not automatically ingested into the verified catalog. The crawler respects robots.txt, per-host delays, response caching, and TLS validation.
+
 ## V. Frontend and Website Experience
 
 The frontend is a Next.js App Router application with TypeScript and Tailwind CSS v4. The primary page contains:
@@ -196,7 +198,7 @@ The frontend is a Next.js App Router application with TypeScript and Tailwind CS
 1. A natural-language search box for describing a situation.
 2. A profile wizard for missing eligibility fields.
 3. Ranked scheme cards with eligibility and trust labels.
-4. Category filtering and grouped recommendations.
+4. Central-government and state-government filters, category filtering, and grouped recommendations.
 5. An opportunity map and “explore other” categories.
 6. An explanation drawer with full rule traces.
 7. Saved schemes and reminder status.
@@ -322,7 +324,7 @@ Precision@K, Recall@K, NDCG@K, eligibility agreement with human adjudicators, ca
 5. Profile persistence is temporary and browser/session-bound; data minimization remains an open product decision.
 6. The frontend has no completed automated browser test suite.
 7. The watcher is manually triggered and not scheduled.
-8. Some official pages may be inaccessible to automated fetchers because of robots policies, HTTP 403 responses, DNS failure, or intermittent connectivity.
+8. Some official pages may be inaccessible to automated fetchers because of robots policies, HTTP 403 responses, DNS failure, or intermittent connectivity. On 2026-10-19, a live check of `https://www.india.gov.in/my-government/schemes` returned HTTP 403 and the configured Tamil Nadu listing at `https://www.tn.gov.in/scheme` returned HTTP 404. The official PM-KISAN and PMAY-Urban homepages were reachable, but these checks do not establish permission for bulk crawling or validate every linked application URL. Check each site's current terms before enabling a new crawl source.
 9. The trust pipeline has conservative discovery-only outcomes when extraction is unstable, unscored, or lacks confirmed rules.
 10. The system has not received a security audit, load test, or real-user evaluation.
 

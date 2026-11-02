@@ -11,6 +11,11 @@ classified.jsonl        ->  (existing extractor + trust engine)
 ```
 
 Neither stage calls an LLM. Both are free to re-run.
+The classifier records the final page URL, a declared canonical URL, and
+candidate application links found on the page. These links are discovery
+evidence only: they are not automatically imported into the verified catalog
+or treated as trusted application destinations. Review the destination and
+the source site's terms before promoting any record.
 
 ## Install
 
@@ -46,6 +51,12 @@ pytest test_discovery.py -q     # 18 tests, no network
 | `harvest.py` | sitemap walking + index-page link extraction + keyword filter |
 | `classify.py` | heuristic scoring of whether a page is a real scheme page |
 | `test_discovery.py` | offline tests for every pure function |
+
+Accepted JSONL records retain the source candidate and classification signals
+and add `source_url`, `canonical_url`, and `application_links`. Each application
+link contains its visible label and HTTPS URL. A human must confirm that it is
+an official, current application route before the URL is added to
+`data/verified/schemes.json`.
 
 ## Adding a state
 

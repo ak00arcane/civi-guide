@@ -68,6 +68,11 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({
         {/* Meta chips */}
         <div className="flex items-center gap-1.5 flex-wrap">
           <span className="chip">{scheme.category}</span>
+          {scheme.government_level && (
+            <span className="chip">
+              {scheme.government_level === "central" ? "Central government" : "State government"}
+            </span>
+          )}
           {scheme.state && <span className="chip">📍 {scheme.state}</span>}
         </div>
 

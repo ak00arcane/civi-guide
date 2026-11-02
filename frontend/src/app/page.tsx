@@ -38,6 +38,7 @@ export default function Home() {
 
   // Category filter
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const [selectedGovernmentLevel, setSelectedGovernmentLevel] = useState<"all" | "central" | "state">("all");
 
   // Selected scheme for explainability drawer
   const [explainScheme, setExplainScheme] = useState<SchemeItem | null>(null);
@@ -124,10 +125,16 @@ export default function Home() {
   // Saved map lookup
   const savedMap = new Map(savedSchemes.map((s) => [s.scheme_id, s.personal_status]));
 
-  // Filter recommendations by selected category
+  // Filter recommendations by government level and category.
   const filteredRecommendations = (recommendData?.recommendations || []).filter((sc) => {
-    if (selectedCategory === "All") return true;
-    return sc.category === selectedCategory;
+    const matchesLevel = selectedGovernmentLevel === "all" || sc.government_level === selectedGovernmentLevel;
+    const matchesCategory = selectedCategory === "All" || sc.category === selectedCategory;
+    return matchesLevel && matchesCategory;
+  });
+  const filteredNearMisses = (recommendData?.near_misses || []).filter((sc) => {
+    const matchesLevel = selectedGovernmentLevel === "all" || sc.government_level === selectedGovernmentLevel;
+    const matchesCategory = selectedCategory === "All" || sc.category === selectedCategory;
+    return matchesLevel && matchesCategory;
   });
 
   const categories = [
@@ -203,6 +210,29 @@ export default function Home() {
         {/* Main Content Views */}
         {activeTab === "results" && (
           <div className="space-y-6">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-xs font-semibold text-[var(--text-dim)] mr-1">Government:</span>
+              {[
+                { value: "all", label: "All schemes" },
+                { value: "central", label: "Central government" },
+                { value: "state", label: "State government" },
+              ].map((filter) => (
+                <button
+                  key={filter.value}
+                  type="button"
+                  aria-pressed={selectedGovernmentLevel === filter.value}
+                  onClick={() => setSelectedGovernmentLevel(filter.value as "all" | "central" | "state")}
+                  className={`px-3 py-1 rounded-lg text-xs font-medium border transition-colors whitespace-nowrap ${
+                    selectedGovernmentLevel === filter.value
+                      ? "bg-[var(--primary)] text-white border-[var(--primary)]"
+                      : "bg-white text-[var(--text-muted)] border-[var(--border-color)] hover:border-[var(--primary-soft-border)]"
+                  }`}
+                >
+                  {filter.label}
+                </button>
+              ))}
+            </div>
+
             {/* Category Filter Chips */}
             {categories.length > 1 && (
               <div className="flex items-center gap-2 overflow-x-auto pb-1 -mx-1 px-1">
@@ -257,7 +287,7 @@ export default function Home() {
             )}
 
             {/* Near Misses Section */}
-            {recommendData?.near_misses && recommendData.near_misses.length > 0 && (
+            {filteredNearMisses.length > 0 && (
               <div className="pt-6 space-y-4">
                 <div className="border-t border-[var(--border-color)] pt-6">
                   <div className="flex items-center gap-2">
@@ -269,7 +299,7 @@ export default function Home() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {recommendData.near_misses.map((scheme) => (
+                  {filteredNearMisses.map((scheme) => (
                     <SchemeCard
                       key={scheme.scheme_id}
                       scheme={scheme}
@@ -287,7 +317,12 @@ export default function Home() {
         {/* Grouped by Need Tab */}
         {activeTab === "grouped" && recommendData?.grouped && (
           <div className="space-y-8">
-            {Object.entries(recommendData.grouped).map(([grpName, schemes]) => (
+            {Object.entries(recommendData.grouped)
+              .map(([grpName, schemes]) => [grpName, schemes.filter((scheme) =>
+                selectedGovernmentLevel === "all" || scheme.government_level === selectedGovernmentLevel
+              )] as const)
+              .filter(([, schemes]) => schemes.length > 0)
+              .map(([grpName, schemes]) => (
               <div key={grpName} className="space-y-4">
                 <div className="flex items-center gap-3 border-b border-[var(--border-color)] pb-2">
                   <h3 className="text-lg font-bold text-[var(--text-main)]">{grpName}</h3>
